@@ -10,7 +10,6 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--model", required=True, help="Model path")
 args = vars(ap.parse_args())
 
-# model_path = 'model/shape_predictor_68_face_landmarks.dat'
 model_path = args['model']
 
 # Now, intialize the dlib's face detector model as 'detector' and the landmark predictor model as 'predictor'
